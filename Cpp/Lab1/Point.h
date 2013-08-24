@@ -1,5 +1,13 @@
-// A 3-dimensional point class!
-// Coordinates are double-precision floating point.
+/*
+ * A 3-dimensional point class
+ * Coordinates are double-precision floating point.
+ *
+ * Author: Ashwin Ramachandran
+ */
+
+#ifndef __POINT_H__
+#define __POINT_H__
+
 #include <cmath>
 
 class Point {
@@ -30,3 +38,4 @@ class Point {
     double y_coord;
     double z_coord;
 };
+#endif
