@@ -8,6 +8,7 @@
 #define __MATRIX_H__
 
 #include <cmath>
+#include <cassert>
 
 class Matrix {
  public:

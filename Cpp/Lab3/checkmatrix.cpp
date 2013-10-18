@@ -7,14 +7,14 @@
 //       compiled, it means you need to fix a problem in your matrix class.
 //
 
-using namespace std;
-
 #include "Matrix.h"
 
 #include <stdlib.h>
 #include <sstream>
 #include <set>
 #include <iostream>
+
+using namespace std;
 
 // Reliably reproducible pseudorandom numbers:
 void srnd(long s) {
