@@ -6,10 +6,12 @@ Matrix::Matrix() {
     num_rows = 0;
     num_cols = 0;
 
-    mat = new int[1];
+    mat = new int[0];
 }
 
 Matrix::Matrix(int r, int c) {
+    assert (r > 0 && c > 0);
+    
     num_rows = r;
     num_cols = c;
 
@@ -44,11 +46,17 @@ int Matrix::getcols() {
 }
 
 int Matrix::getelem(int r, int c) {
+    assert ((r >= 0) && (r < num_rows));
+    assert ((c >= 0) && (c < num_cols));
+    
     return mat[(r * num_cols) + c];
 }
 
 // Mutators
 void Matrix::setelem(int r, int c, int v) {
+    assert ((r >= 0) && (r < num_rows));
+    assert ((c >= 0) && (c < num_cols));
+    
     mat[(r * num_cols) + c] = v;
 }
 
